@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S&L Interior - Preview</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #ffffff;
+        color: #333;
+    }
+    header {
+        background-color: #A3D2CA;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+    .hero {
+        background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+    }
+    .btn {
+        background-color: #0E8871;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    section {
+        padding: 40px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    .service {
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        padding-bottom: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .service img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .why-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid #A3D2CA;
+    }
+    .why-item {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px;
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 600px;
+    }
+    input, select, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #0E8871;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    footer {
+        background-color: #A3D2CA;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    a.contact-link { color: #0E8871; text-decoration:none; font-weight:bold;}
+    @media (max-width:600px) {
+        .hero { height: 320px; padding: 20px; }
+        .hero h1 { font-size: 1.6rem; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>S&L Interior</h1>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#book">Book Consultation</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Transforming Spaces, Creating Stories</h1>
+    <p>From concept to creation, we bring your vision to life.</p>
+    <a href="#book" class="btn">Book Your Consultation</a>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>S&L Interior is a full-service interior design firm, blending creativity, functionality, and sophistication to craft spaces that reflect your personality. Whether it’s your home, office, or an event venue, we bring balance, style, and comfort to every project.</p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1600585154203-c0f3a3c7b1d3?q=80&w=1200&auto=format&fit=crop" alt="Residential">
+            <h3>Residential Interior Design</h3>
+            <p>Elegant and functional home makeovers.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop" alt="Commercial">
+            <h3>Commercial Space Design</h3>
+            <p>Inspiring, modern workplaces.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1578898887932-c28d0a2fdac5?q=80&w=1200&auto=format&fit=crop" alt="Event">
+            <h3>Event Space Styling</h3>
+            <p>Memorable décor for weddings, parties, and events.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop" alt="Custom">
+            <h3>Custom Furniture & Decor</h3>
+            <p>Handpicked pieces to match your vision.</p>
+        </div>
+    </div>
+</section>
+
+<section id="why">
+    <h2>Why Choose Us</h2>
+    <div class="why-box">
+        <div class="why-item">
+            <h3>🏠 45 Days Move-In Guarantee</h3>
+            <p>Your dream space, ready in just 45 days.</p>
+        </div>
+        <div class="why-item">
+            <h3>💼 300+ Happy Clients</h3>
+            <p>Trusted by homeowners and businesses.</p>
+        </div>
+        <div class="why-item">
+            <h3>🎨 Team of 20 Designers</h3>
+            <p>A powerhouse of creativity for your project.</p>
+        </div>
+    </div>
+</section>
+
+<section id="book">
+    <h2>Book Consultation</h2>
+    <form onsubmit="alert('Thank you! Your booking request has been received. We will contact you soon.'); return false;">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone" required>
+        <select required>
+            <option value="">Type of Project</option>
+            <option>Residential</option>
+            <option>Commercial</option>
+            <option>Event</option>
+            <option>Other</option>
+        </select>
+        <input type="date" required>
+        <textarea placeholder="Your Message" rows="4"></textarea>
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a class="contact-link" href="mailto:slinterior10@gmail.com">slinterior10@gmail.com</a></p>
+    <p>Phone: <a class="contact-link" href="tel:+917349550570">+91 7349550570</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 S&L Interior | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
